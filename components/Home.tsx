@@ -1,9 +1,8 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FaGithub, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
-import Typewriter from "typewriter-effect";
+import { Typewriter } from "@/components/Typewriter";
 
 export default function Home() {
   const Links = [
@@ -53,22 +52,7 @@ export default function Home() {
           Hello, I'm
         </span>
         <h1 className="text-5xl font-bold">Ashutosh Gaurav</h1>
-        <h2 className="text-[1.1rem] font-semibold text-[#DC143C]">
-          <Typewriter
-            options={{
-              strings: [
-                "Software Developer",
-                "Full Stack Developer",
-                "JS & TS Developer",
-                "Python Developer",
-              ],
-              autoStart: true,
-              loop: true,
-              cursor: "|",
-              wrapperClassName: "typewriterpara",
-            }}
-          />
-        </h2>
+        <Typewriter />
         <p className="font-normal my-[0.7rem_0_1rem] text-justify p-2">
           Building digital connections one line of code at a time, because in
           the world of React and Python, I'm the developer your website has been

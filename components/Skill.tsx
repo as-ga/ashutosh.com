@@ -40,8 +40,8 @@ export default function Skill() {
   ];
 
   return (
-    <div>
-      <h1 className="text-center text-3xl font-bold mt-10 mb-5">Skill</h1>
+    <div id="skills" className="pt-5 pb-0 mb-0">
+      <h1 className="text-center text-3xl font-bold mt-10 mb-5">Skills</h1>
       <div className="flex flex-wrap justify-center items-center">
         {skills.map((skill) => (
           <Image
